@@ -88,6 +88,18 @@ Never commit keys; `.env*` is ignored by the parent repo. Add DNC/consent/opt-ou
 
 Run imports hourly/daily from cron, GitHub Actions with secrets, or a small VM. Keep downloaded raw files in immutable dated storage, use stable `--source` values, and back up the SQLite DB. For a multi-user deployment, port `SCHEMA` in `src/kern_leads/db.py` to Postgres/Supabase and put an authenticated API/dashboard in front of it.
 
+## Web UI
+
+A Next.js dashboard is included in the `web/` directory. It provides a real-time lead feed, analytics, export, and settings.
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). See `web/README.md` for Vercel deployment instructions.
+
 ## Tests
 
 ```bash
