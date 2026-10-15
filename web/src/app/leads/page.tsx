@@ -55,7 +55,7 @@ export default function LeadsPage() {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
-      <div className="flex-1 ml-[260px] transition-all">
+      <div className="flex-1 md:ml-[260px] transition-all">
         <Header />
         <main className="p-6 space-y-6">
           <div className="flex items-center justify-between">
