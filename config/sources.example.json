@@ -1,0 +1,8 @@
+{
+  "county": "Kern",
+  "sources": [
+    {"name":"recorder_export","format":"csv","event_types":["pre_foreclosure","lien"],"notes":"Export authorized Recorder index results; do not bypass CAPTCHA or access controls."},
+    {"name":"superior_court_export","format":"csv","event_types":["probate"],"notes":"Use a permitted court export or licensed feed."},
+    {"name":"tax_sale_list","format":"csv","event_types":["tax_delinquent"],"notes":"Convert the official published tax-sale list to the canonical columns."}
+  ]
+}

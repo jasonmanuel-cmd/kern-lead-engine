@@ -1,0 +1,4 @@
+event_type,document_number,recorded_date,owner_name,situs_address,city,zip,apn,case_number,amount
+pre_foreclosure,NOD-2026-1001,2026-10-01,Jane Doe,123 Main Street,Bakersfield,93301,001-020-03,,12500
+tax_delinquent,TAX-2026-41,2026-09-15,JANE DOE,123 Main St.,Bakersfield,93301,00102003,,4200
+probate,BP-2026-0099,2026-08-01,Estate of John Smith,900 Oak Avenue,Delano,93215,034-100-22,BP-2026-0099,
