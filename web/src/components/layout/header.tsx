@@ -28,10 +28,10 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-border bg-background/80 backdrop-blur-xl px-6">
+    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-border bg-background/80 backdrop-blur-xl px-6 pl-16 md:pl-6">
       <div>
-        <h1 className="text-lg font-semibold">{pageInfo.title}</h1>
-        <p className="text-xs text-muted-foreground">{pageInfo.subtitle}</p>
+        <h1 className="text-base sm:text-lg font-semibold">{pageInfo.title}</h1>
+        <p className="text-xs text-muted-foreground hidden sm:block">{pageInfo.subtitle}</p>
       </div>
 
       <div className="flex items-center gap-3">

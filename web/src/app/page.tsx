@@ -107,7 +107,7 @@ export default function Dashboard() {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
-      <div className="flex-1 ml-[260px] transition-all">
+      <div className="flex-1 md:ml-[260px] transition-all">
         <Header />
         <main className="p-6 space-y-6">
           {/* Stats Row */}
@@ -293,8 +293,7 @@ export default function Dashboard() {
                   {filteredLeads.length} leads · Updated just now
                 </p>
               </div>
-              <div className="flex items-center gap-2">
-                {/* Search */}
+              <div className="flex flex-wrap items-center gap-2">
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <input
@@ -302,7 +301,7 @@ export default function Dashboard() {
                     placeholder="Search leads..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="h-9 w-64 rounded-lg border border-border bg-card pl-9 pr-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    className="h-9 w-full sm:w-64 rounded-lg border border-border bg-card pl-9 pr-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                 </div>
 

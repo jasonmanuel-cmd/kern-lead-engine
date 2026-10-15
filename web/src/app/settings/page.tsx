@@ -38,7 +38,7 @@ export default function SettingsPage() {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
-      <div className="flex-1 ml-[260px] transition-all">
+      <div className="flex-1 md:ml-[260px] transition-all">
         <Header />
         <main className="p-6 space-y-6">
           <div>
@@ -46,9 +46,9 @@ export default function SettingsPage() {
             <p className="text-sm text-muted-foreground mt-1">Configure your lead engine</p>
           </div>
 
-          <div className="flex gap-6">
+          <div className="flex flex-col gap-6 md:flex-row">
             {/* Sidebar tabs */}
-            <div className="w-56 shrink-0 space-y-1">
+            <div className="w-full md:w-56 shrink-0 space-y-1 flex md:block gap-1 overflow-x-auto md:overflow-visible pb-2 md:pb-0">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
